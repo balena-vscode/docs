@@ -106,16 +106,20 @@
 
 <style>
 	h1 {
-		font-size: 20px;
+		font-size: 24px;
 	}
 	h3 {
 		margin-top: 0;
-		font-size: 14px;
+		font-size: 16px;
 		color: #222832;
 	}
 
 	a {
 		color: #ffc100;
+	}
+
+	a:hover {
+		color: #ffe79e;
 	}
 
 	p {
@@ -132,7 +136,8 @@
 	}
 
 	button {
-		width: 120px;
+		display: inline-block;
+		width: 130px;
 		height: 31px;
 		font-weight: 700;
 		font-size: 16px;
