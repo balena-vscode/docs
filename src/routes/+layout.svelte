@@ -6,7 +6,7 @@
 	<div class="balena_logo">
 		<picture>
 			<source srcset="balena_icon.svg" type="image/svg+xml" />
-			<img alt="Balena logo" src="balena_icon.svg" />
+			<img width="50px" height="50px" alt="Balena logo" src="balena_icon.svg" />
 		</picture>
 		<h2>Balena (unoffical)</h2>
 	</div>

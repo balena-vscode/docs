@@ -1,6 +1,6 @@
 <div class="title">
 	<h1>Manage your IoT devices without leaving your workspace</h1>
-	<h3>Unoffical VS Code extenstion for integration with Balena</h3>
+	<h2>Unoffical VS Code extenstion for integration with Balena</h2>
 	<div class="buttons">
 		<a
 			rel="noreferrer"
@@ -18,19 +18,21 @@
 		</a>
 	</div>
 	<picture>
-		<source src="balena-asset-simple.png" type="png" />
+		<source srcset="balena-asset-simple.png" type="png" />
 		<img
 			class="balena-asset"
 			alt="extension visualization in VS code"
 			src="balena-asset-simple.png"
+			width="800px"
+			height="600px"
 		/>
 	</picture>
 </div>
 <div class="cards">
 	<div class="card">
 		<picture>
-			<source src="summary.svg" type="svg/xml" />
-			<img alt="list icon" src="summary.svg" />
+			<source srcset="summary.svg" type="svg/xml" />
+			<img width="60px" height="45px" alt="list icon" src="summary.svg" />
 		</picture>
 		<div>
 			<h3 class="card_title">Summary</h3>
@@ -42,8 +44,8 @@
 	</div>
 	<div class="card">
 		<picture>
-			<source src="devices.svg" type="svg/xml" />
-			<img alt="list icon" src="devices.svg" />
+			<source srcset="devices.svg" type="svg/xml" />
+			<img width="60px" height="45px" alt="list icon" src="devices.svg" />
 		</picture>
 		<div>
 			<h3 class="card_title">Devices</h3>
@@ -52,8 +54,8 @@
 	</div>
 	<div class="card">
 		<picture>
-			<source src="verified.svg" type="svg/xml" />
-			<img alt="list icon" src="verified.svg" />
+			<source srcset="verified.svg" type="svg/xml" />
+			<img width="60px" height="60px" alt="list icon" src="verified.svg" />
 		</picture>
 		<div>
 			<h3 class="card_title">Releases</h3>
@@ -62,8 +64,8 @@
 	</div>
 	<div class="card">
 		<picture>
-			<source src="wrench.svg" type="svg/xml" />
-			<img alt="list icon" src="wrench.svg" />
+			<source srcset="wrench.svg" type="svg/xml" />
+			<img width="60px" height="65px" alt="list icon" src="wrench.svg" />
 		</picture>
 		<div>
 			<h3 class="card_title">Services</h3>
@@ -72,8 +74,8 @@
 	</div>
 	<div class="card">
 		<picture>
-			<source src="variable.svg" type="svg/xml" />
-			<img alt="list icon" src="variable.svg" />
+			<source srcset="variable.svg" type="svg/xml" />
+			<img width="60px" height="45px" alt="list icon" src="variable.svg" />
 		</picture>
 		<div>
 			<h3 class="card_title">Variables</h3>
@@ -82,8 +84,8 @@
 	</div>
 	<div class="card">
 		<picture>
-			<source src="metadata.svg" type="svg/xml" />
-			<img alt="list icon" src="metadata.svg" />
+			<source srcset="metadata.svg" type="svg/xml" />
+			<img width="60px" height="60px" alt="list icon" src="metadata.svg" />
 		</picture>
 		<div>
 			<h3 class="card_title">Metadata</h3>
@@ -94,32 +96,33 @@
 	</div>
 </div>
 <div class="contribute">
-	<h3>
+	<h2>
 		Want to contribute? Check out <a
 			rel="noreferrer"
 			target="_blank"
 			href="https://github.com/balena-vscode/balena-vscode/blob/main/CONTRIBUTING.md"
 			>CONTRIBUTING.md</a
 		> in the repo
-	</h3>
+	</h2>
 </div>
 
 <style>
 	h1 {
 		font-size: 24px;
 	}
-	h3 {
+	h2 {
 		margin-top: 0;
 		font-size: 16px;
 		color: #222832;
 	}
 
 	a {
-		color: #ffc100;
+		color: #114783;
+		text-decoration: none;
 	}
 
 	a:hover {
-		color: #ffe79e;
+		color: #2176d4;
 	}
 
 	p {
@@ -133,6 +136,7 @@
 	.balena-asset {
 		width: 90vw;
 		max-width: 1440px;
+		height: auto;
 	}
 
 	button {
@@ -202,6 +206,7 @@
 	.card img {
 		width: 40px;
 		margin-right: 16px;
+		height: auto;
 	}
 
 	.contribute {
@@ -213,7 +218,7 @@
 		h1 {
 			font-size: 40px;
 		}
-		h3 {
+		h2 {
 			font-size: 24px;
 		}
 
