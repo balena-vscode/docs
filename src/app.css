@@ -4,6 +4,8 @@
 	font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font: 'Roboto Condensed', sans-serif;
+	background-color: #1e1e1e;
+	color: white;
 	/* --pure-white: #ffffff;
     --primary-color: #b9c6d2;
     --secondary-color: #d0dde9;
@@ -28,12 +30,12 @@ body div {
 pre {
 	font-size: 16px;
 	font-family: var(--font);
-	/* background-color: rgba(255, 255, 255, 0.45);
-    border-radius: 3px;
-    box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
-    padding: 0.5em;
-    overflow-x: auto;
-    color: var(--text-color); */
+	background-color: #1e1e1e;
+	/* border-radius: 3px;
+	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
+	padding: 0.5em;
+	overflow-x: auto;
+	color: var(--text-color); */
 }
 
 button {
