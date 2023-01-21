@@ -1,3 +1,7 @@
+<script>
+	import Cube from './Cube.svelte';
+</script>
+
 <div class="header">
 	<div class="title">
 		<h1>Manage your IoT devices without leaving your workspace</h1>
@@ -20,13 +24,7 @@
 		</div>
 	</div>
 	<div>
-		<iframe
-			title="interactive 3D blue & yellow cube"
-			src="https://my.spline.design/untitled-fdda29da4a1d6efa54ba71cf6beb2cd8/"
-			frameborder="0"
-			width="100%"
-			height="100%"
-		/>
+		<Cube />
 	</div>
 </div>
 
