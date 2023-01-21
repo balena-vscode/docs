@@ -20,11 +20,21 @@
 		</div>
 	</div>
 	<div>
-		<h1>Image Placeholder</h1>
+		<iframe
+			title="interactive 3D blue & yellow cube"
+			src="https://my.spline.design/untitled-fdda29da4a1d6efa54ba71cf6beb2cd8/"
+			frameborder="0"
+			width="100%"
+			height="100%"
+		/>
 	</div>
 </div>
 
 <style>
+	iframe {
+		height: 40em;
+		width: 40em;
+	}
 	h1 {
 		font-size: 24px;
 	}
