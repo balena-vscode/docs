@@ -5,7 +5,7 @@
 <div class="header">
 	<div class="title">
 		<h1>Manage your IoT devices without leaving your workspace</h1>
-		<h2>Unoffical VS Code extenstion for integration with Balena</h2>
+		<h2>Unoffical VS Code extenstion for use with Balena</h2>
 		<div class="buttons">
 			<a
 				rel="noreferrer"
@@ -23,16 +23,16 @@
 			</a>
 		</div>
 	</div>
-	<div class="cube">
+	<div id="cube">
 		<Cube />
 	</div>
 </div>
 
 <style>
-	.cube {
-		height: 40em;
-		width: 40em;
-	}
+	/* .cube {
+		height: 15em;
+		width: 15em;
+	} */
 	/* iframe {
 		height: 40em;
 		width: 40em;
@@ -84,6 +84,10 @@
 		background: linear-gradient(180deg, rgba(255, 150, 14, 1) 0%, rgba(255, 241, 118, 1) 100%);
 		color: #222832;
 	}
+	/* .cube {
+		height: 40em;
+		width: 40em;
+	} */
 
 	@media (min-width: 768px) {
 		h1 {
@@ -104,6 +108,10 @@
 		}
 	}
 	@media (min-width: 1024px) {
+		/* .cube {
+			height: 30em;
+			width: 30em;
+		} */
 		.title {
 			width: 80%;
 		}
@@ -117,5 +125,9 @@
 		.title {
 			width: 50%;
 		}
+		/* .cube {
+			height: 40em;
+			width: 40em;
+		} */
 	}
 </style>
