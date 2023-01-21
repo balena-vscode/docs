@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { Canvas, InteractiveObject, OrbitControls, Three } from '@threlte/core';
 	import { spring } from 'svelte/motion';
 	import {
@@ -13,49 +13,20 @@
 	} from 'three';
 	import { degToRad } from 'three/src/math/MathUtils';
 	import { GLTF } from '@threlte/extras';
+	import { Application } from '@splinetool/runtime';
+	import { onMount } from 'svelte';
+
+	let canvas: any;
+	onMount(() => {
+		const app = new Application(canvas!);
+		app.load('https://prod.spline.design/KamO0IlCR5qVDcfx/scene.splinecode');
+	});
 
 	const scale = spring(1);
 </script>
 
 <div>
-	<GLTF
-		url="../static/untitled.gltf"
-		interactive
-		on:click={() => {
-			console.log('User clicked!');
-		}}
-	/>
-	<Canvas>
-		<Three type={PerspectiveCamera} makeDefault position={[10, 10, 10]} fov={24}>
-			<OrbitControls maxPolarAngle={degToRad(80)} enableZoom={false} target={{ y: 0.5 }} />
-		</Three>
-
-		<Three type={DirectionalLight} castShadow position={[3, 10, 10]} />
-		<Three type={DirectionalLight} position={[-3, 10, -10]} intensity={0.2} />
-		<Three type={AmbientLight} intensity={0.2} />
-
-		<!-- Cube -->
-		<Three type={Group} scale={$scale}>
-			<Three type={Mesh} position.y={0.5} castShadow let:ref>
-				<!-- Add interaction -->
-				<InteractiveObject
-					object={ref}
-					interactive
-					on:pointerenter={() => ($scale = 2)}
-					on:pointerleave={() => ($scale = 1)}
-				/>
-
-				<Three type={BoxGeometry} />
-				<Three type={MeshStandardMaterial} color="#333333" />
-			</Three>
-		</Three>
-
-		<!-- Floor -->
-		<Three type={Mesh} receiveShadow rotation.x={degToRad(-90)}>
-			<Three type={CircleGeometry} args={[3, 72]} />
-			<Three type={MeshStandardMaterial} color="white" />
-		</Three>
-	</Canvas>
+	<canvas bind:this={canvas} />
 </div>
 
 <style>

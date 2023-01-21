@@ -23,16 +23,20 @@
 			</a>
 		</div>
 	</div>
-	<div>
+	<div class="cube">
 		<Cube />
 	</div>
 </div>
 
 <style>
-	iframe {
+	.cube {
 		height: 40em;
 		width: 40em;
 	}
+	/* iframe {
+		height: 40em;
+		width: 40em;
+	} */
 	h1 {
 		font-size: 24px;
 	}
