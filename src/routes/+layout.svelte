@@ -75,7 +75,7 @@
 	}
 
 	.docs {
-		margin-right: 60px;
+		margin-right: 20px;
 	}
 
 	a {
@@ -139,6 +139,9 @@
 			width: 30px;
 			height: 30px;
 			margin-right: 16px;
+		}
+		.docs {
+			margin-right: 40px;
 		}
 	}
 
