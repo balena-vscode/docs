@@ -67,9 +67,11 @@
 		margin-top: 16px;
 		align-items: center;
 		max-width: 1440px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid rgb(56, 56, 56);
 	}
 	header h2 {
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	.docs {
@@ -118,8 +120,8 @@
 	}
 
 	.balena_logo img {
-		width: 30px;
-		height: 30px;
+		width: 20px;
+		height: 20px;
 		margin-right: 8px;
 	}
 
@@ -128,17 +130,14 @@
 	}
 
 	@media (min-width: 768px) {
-		header h2 {
-			font-size: 24px;
-		}
 		.github_logo {
-			width: 50px;
-			height: 50px;
+			width: 30px;
+			height: 30px;
 		}
 
 		.balena_logo img {
-			width: 50px;
-			height: 50px;
+			width: 30px;
+			height: 30px;
 			margin-right: 16px;
 		}
 	}

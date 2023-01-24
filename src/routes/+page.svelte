@@ -1,7 +1,3 @@
-<script>
-	import Cube from './Cube.svelte';
-</script>
-
 <div class="header">
 	<div class="title">
 		<h1>Manage your IoT devices without leaving your workspace</h1>
@@ -24,7 +20,11 @@
 		</div>
 	</div>
 	<div id="cube">
-		<Cube />
+		<iframe
+			title="interactive 3d cube"
+			src="https://my.spline.design/iframecubecopy-8dbbb6e86305ccc8e567a450cf015c2e/"
+			frameborder="0"
+		/>
 	</div>
 </div>
 
@@ -33,10 +33,10 @@
 		height: 15em;
 		width: 15em;
 	} */
-	/* iframe {
-		height: 40em;
-		width: 40em;
-	} */
+	iframe {
+		width: 300px;
+		height: 300px;
+	}
 	h1 {
 		font-size: 24px;
 	}
@@ -48,17 +48,18 @@
 
 	.title {
 		max-width: 400px;
+		/* margin-bottom: 0; */
 	}
 
 	.header {
 		flex-direction: column;
-		height: 100%;
+		margin-top: 50px;
 	}
 
 	button {
 		display: inline-block;
-		width: 130px;
-		height: 31px;
+		width: 120px;
+		height: 30px;
 		font-weight: 700;
 		font-size: 16px;
 		border-radius: 5px;
@@ -70,23 +71,21 @@
 	}
 
 	button:hover {
-		opacity: 0.7;
+		border: solid 1px #f5faff;
+		cursor: pointer;
 	}
 
 	.buttons {
 		display: flex;
 		flex-direction: row;
 		margin-top: 20px;
+		width: 100%;
 	}
 
-	.vs-button {
+	/* .vs-button {
 		background: rgb(255, 150, 14);
 		background: linear-gradient(180deg, rgba(255, 150, 14, 1) 0%, rgba(255, 241, 118, 1) 100%);
 		color: #222832;
-	}
-	/* .cube {
-		height: 40em;
-		width: 40em;
 	} */
 
 	@media (min-width: 768px) {
@@ -98,26 +97,51 @@
 		}
 
 		button {
-			width: 180px;
-			height: 50px;
-			font-size: 24px;
+			width: 160px;
+			height: 40px;
+			font-size: 20px;
 			margin: 16px;
+		}
+		.header {
+			margin-top: 80px;
 		}
 		.title {
 			max-width: 600px;
 		}
+
+		iframe {
+			width: 500px;
+			height: 500px;
+		}
 	}
 	@media (min-width: 1024px) {
-		/* .cube {
-			height: 30em;
-			width: 30em;
-		} */
+		h1 {
+			font-size: 35px;
+		}
+		h2 {
+			font-size: 20px;
+		}
 		.title {
 			width: 80%;
+			text-align: left;
+			max-width: 500px;
+			justify-items: left;
+			justify-content: start;
+		}
+
+		.buttons {
+			justify-content: left;
+			text-align: left;
+		}
+		button {
+			margin: 16px 16px 16px 0;
 		}
 		.header {
 			flex-direction: row;
-			/* width: 85%; */
+		}
+
+		h2 {
+			width: 100%;
 		}
 	}
 
@@ -125,9 +149,5 @@
 		.title {
 			width: 50%;
 		}
-		/* .cube {
-			height: 40em;
-			width: 40em;
-		} */
 	}
 </style>
