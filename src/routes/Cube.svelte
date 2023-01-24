@@ -6,17 +6,16 @@
 	import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 	onMount(async () => {
+		let cubeContainer = document.getElementById('cube')!;
 		// camera
-		const camera = new THREE.OrthographicCamera(
-			window.innerWidth / -4,
-			window.innerWidth / 4,
-			window.innerHeight / 4,
-			window.innerHeight / -4,
-			-200000,
-			200000
+		const camera = new THREE.PerspectiveCamera(
+			45,
+			window.innerWidth / 2 / window.innerHeight,
+			70,
+			100000
 		);
-		camera.position.set(-678.52, 230.73, 736.38);
-		camera.quaternion.setFromEuler(new THREE.Euler(-0.19, -0.66, -0.12));
+		camera.position.set(-924.79, 195.86, 1388.42);
+		camera.quaternion.setFromEuler(new THREE.Euler(-0.08, -0.54, -0.04));
 
 		// scene
 		const scene = new THREE.Scene();
@@ -29,9 +28,9 @@
 
 		// renderer
 		const renderer = new THREE.WebGLRenderer({ antialias: true });
-		renderer.setSize(window.innerWidth / 2, window.innerHeight / 2);
+		renderer.setSize(window.innerWidth / 2, window.innerHeight);
 		renderer.setAnimationLoop(animate);
-		let cubeContainer = document.getElementById('cube')!;
+
 		cubeContainer.appendChild(renderer.domElement);
 
 		// scene settings
@@ -48,10 +47,8 @@
 
 		window.addEventListener('resize', onWindowResize);
 		function onWindowResize() {
-			camera.left = window.innerWidth / -2;
-			camera.right = window.innerWidth / 2;
-			camera.top = window.innerHeight / 2;
-			camera.bottom = window.innerHeight / -2;
+			console.log('resize');
+			camera.aspect = window.innerWidth / window.innerHeight;
 			camera.updateProjectionMatrix();
 			renderer.setSize(window.innerWidth / 2, window.innerHeight);
 		}
